@@ -1,10 +1,10 @@
 ---
-title: "Data Wrangling Project"
-date: 2018-01-28
-tags: [data wrangling, data science, messy data]
+title: "Segmentation of the Customer"
+date: 2020-04-28
+tags: [Customer Segmentation, data science, messy data]
 header:
   image: "/images/perceptron/percept.jpg"
-excerpt: "Data Wrangling, Data Science, Messy Data"
+excerpt: "Customer Segmentation, Data Science, Messy Data"
 mathjax: "true"
 ---
 
@@ -14,9 +14,9 @@ mathjax: "true"
 
 ### H3 Heading
 
-Here's some basic text.
+Customer Segmentation is the clustering the customer based on the there income.
 
-And here's some *italics*
+Kmeans model use for Customer Segmentation
 
 Here's some **bold** text.
 
