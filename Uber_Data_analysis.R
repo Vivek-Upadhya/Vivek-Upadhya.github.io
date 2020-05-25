@@ -188,3 +188,34 @@ ggplot(Day_hour_data,aes(Day,hour,fill=Total))+
   ggtitle("Heat map by hour and day")
 
 # we will plot Heatmap by Month and Day
+
+ggplot(month_day_data,aes(Day,Month,fill=Total))+
+  geom_tile(color="White")+
+  ggtitle("Heat map by Month and day")
+
+#We plot Heat map of Day of week and month
+ggplot(month_dayofweek_data,aes(dayofweek,Month,fill=Total))+
+  geom_tile(color="white")+
+  ggtitle("Heat map by month and dayofweek")
+
+#Creating a map visualization of rides in New York
+
+min_lat<-40.5774
+max_lat<-40.9176
+min_long<- -74.15
+max_long <- -73.7004
+
+ggplot(data_2014,aes(x=Lon,y=Lat))+
+  geom_point(size=1,color="blue")+
+  scale_y_continuous(limits = c(min_lat,max_lat))+
+  scale_x_continuous(limits=c(min_long,max_long))+
+  theme_map()+
+  ggtitle("NYC MAP BASED ON UBER RIDES DURING 2014 (APR-SEP)")
+  
+
+ggplot(data_2014, aes(x=Lon, y=Lat, color = Base)) +
+  geom_point(size=1) +
+  scale_x_continuous(limits=c(min_long, max_long)) +
+  scale_y_continuous(limits=c(min_lat, max_lat)) +
+  theme_map() +
+  ggtitle("NYC MAP BASED ON UBER RIDES DURING 2014 (APR-SEP) by base")
